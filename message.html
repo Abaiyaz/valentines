@@ -1,101 +1,109 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>For You ❤️</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For You ❤️</title>
 
-<style>
+  <style>
+    body{
+      margin:0;
+      background:#fff0f5;
+      font-family: Arial, sans-serif;
+      text-align:center;
+      padding:40px 20px;
+      overflow-x:hidden;
+    }
 
-body{
-margin:0;
-background:#fff0f5;
-font-family:Arial, sans-serif;
-text-align:center;
-padding:40px 20px;
-overflow-x:hidden;
-}
+    .container{
+      max-width:800px;
+      margin:0 auto;
+    }
 
-/* Container */
-.container{
-max-width:800px;
-margin:auto;
-}
+    @keyframes fadeIn {
+      0% { opacity:0; transform:translateY(20px); }
+      100% { opacity:1; transform:translateY(0); }
+    }
 
-/* Fade animation */
-@keyframes fadeIn {
-0% { opacity:0; transform:translateY(20px); }
-100% { opacity:1; transform:translateY(0); }
-}
+    img{
+      width:100%;
+      max-width:400px;
+      border-radius:20px;
+      box-shadow:0 15px 35px rgba(0,0,0,0.25);
+      margin:0 auto 30px auto;
+      display:block;
+      opacity:0;
+      animation:fadeIn 2.5s ease forwards;
+    }
 
-/* Image */
-img{
-width:100%;
-max-width:400px;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,0.25);
-margin-bottom:30px;
-opacity:0;
-animation:fadeIn 2.5s ease forwards;
-}
+    .heart{
+      position:fixed;
+      bottom:-60px;
+      font-size:22px;
+      opacity:0.6;
+      pointer-events:none;
+      animation:floatUp 10s linear infinite;
+    }
 
-/* Floating hearts */
-.heart{
-position:fixed;
-bottom:-50px;
-font-size:22px;
-animation:floatUp 10s linear infinite;
-opacity:0.6;
-pointer-events:none;
-}
+    @keyframes floatUp{
+      0% { transform:translateY(0); opacity:0.6; }
+      100% { transform:translateY(-120vh); opacity:0; }
+    }
 
-@keyframes floatUp{
-0%{
-transform:translateY(0);
-opacity:0.6;
-}
-100%{
-transform:translateY(-120vh);
-opacity:0;
-}
-}
+    h1{
+      font-size:36px;
+      color:#d63384;
+      margin:10px 0 25px 0;
+    }
 
-h1{
-font-size:36px;
-color:#d63384;
-margin-bottom:30px;
-}
+    p{
+      font-size:18px;
+      color:#333;
+      line-height:1.9;
+      margin:18px 0;
+    }
 
-p{
-line-height:1.9;
-font-size:18px;
-color:#333;
-margin-bottom:20px;
-}
-
-</style>
+    .closing{
+      font-weight:700;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- Song -->
-<iframe width="0" height="0"
-src="https://www.youtube.com/embed/MqazV4hbu8E?autoplay=1"
-allow="autoplay">
-</iframe>
+  <!-- Song (may require user interaction to autoplay in some browsers) -->
+  <iframe
+    width="0"
+    height="0"
+    src="https://www.youtube.com/embed/MqazV4hbu8E?autoplay=1"
+    allow="autoplay"
+    style="border:0;"
+  ></iframe>
 
-<!-- Floating hearts -->
-<div class="heart" style="left:10%">❤️</div>
-<div class="heart" style="left:25%; animation-delay:2s;">💖</div>
-<div class="heart" style="left:40%; animation-delay:4s;">💕</div>
-<div class="heart" style="left:60%; animation-delay:1s;">❤️</div>
-<div class="heart" style="left:75%; animation-delay:3s;">💘</div>
-<div class="heart" style="left:90%; animation-delay:5s;">💓</div>
+  <!-- Floating hearts -->
+  <div class="heart" style="left:10%;">❤️</div>
+  <div class="heart" style="left:25%; animation-delay:2s;">💖</div>
+  <div class="heart" style="left:40%; animation-delay:4s;">💕</div>
+  <div class="heart" style="left:60%; animation-delay:1s;">❤️</div>
+  <div class="heart" style="left:75%; animation-delay:3s;">💘</div>
+  <div class="heart" style="left:90%; animation-delay:5s;">💓</div>
 
-<div class="container">
+  <div class="container">
+    <img src="us.jpg" alt="us" />
 
-<img src="us.jpg" alt="us">
+    <h1>Hey Marry Marry Marry Me ❤️</h1>
 
-<h1>Hey Marry Marry Marry Me ❤️</h1>
+    <p>Without you nothing feels nice.</p>
+    <p>There won't be a single day or a single minute I will not choose you.</p>
+    <p>I am the greediest when it comes to you.</p>
+    <p>I want every second, every minute, every hour so that I can be with you more and more.</p>
+    <p>I love your smell, I love your smile, your eyes, your hair, everything about you.</p>
+    <p>How you speak, how you laugh, how you say pekpekpek, the eyerolls and everything.</p>
+    <p>I would fast forward time so that I can be with you sooner and never change the past so that I can meet you exactly how we are today.</p>
+    <p>I love your hugs, I love your kisses, I love holding your hands.</p>
+    <p>I can keep going on and on boss, even then it won't be enough.</p>
+    <p class="closing">For me, you are my forever Valentine, with endless love and memories still waiting to be written.</p>
+  </div>
 
-<p>Without you nothing feels nice.</p>
-
-<p>There won't be a single day or a sin
+</body>
+</html>
